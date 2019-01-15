@@ -1,0 +1,17 @@
+runtime: go111
+
+handlers:
+
+- url: /image
+  static_dir: image
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto

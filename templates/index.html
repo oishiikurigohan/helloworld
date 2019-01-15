@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Go & Bootstrap Test.</title>
+    <link rel="stylesheet" type="text/css" href="{{.Style}}">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 alert alert-success" role="alert">Bootstrap4つかえます</div>
+        <div class="col-sm-7 bg-info"><p class="text-white font-weight-bold">Current time is: {{.RequestTime}}</p></div>
+        <div class="col-sm-2"><img id="logo" src="{{.Logo}}" width="100" /></div>
+      </div>
+    </div>
+
+    <script src="{{.JQuery}}"></script>
+    <script src="{{.BootstrapBundle}}"></script>
+
+  </body>
+</html>
